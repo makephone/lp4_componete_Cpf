@@ -49,8 +49,8 @@ function App() {
   }
 
   return (
-    <div>
-      <h3>Digite um CPF:</h3>
+    <div className='bg-green-300 border-green-600 border-b p-4 m-4 rounded'>
+      <h3 className='text-white'>Digite um CPF:</h3>
       <CpfCnpj
         value={cpfCnpj}
         onChange={(event, type) => {
@@ -70,7 +70,7 @@ function App() {
         }}
       />
 
-      <h3>{msg}</h3>
+      <h3 className='text-white'>{msg}</h3>
     </div>
   );
 }
